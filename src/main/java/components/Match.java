@@ -14,14 +14,17 @@ public class Match extends Fighters {
     }
 
 
-    public Match(String fighterId, String firstName, String lastName,
-                 String weight, String nickname,
-                 List<String> titles, int BatlleId,
-                 String Localisation) {
+    public Match(String fighterId, String firstName, String lastName, String weight, String nickname, List<String> titles, int batlleId, LocalDate battleDate, String localisation) {
         super(fighterId, firstName, lastName, weight, nickname, titles);
-        this.BatlleId = BatlleId;
-        this.Localisation = Localisation;
+        BatlleId = batlleId;
+        BattleDate = battleDate;
+        Localisation = localisation;
     }
 
+    @Override
+    public void Palmares() {
+        super.Palmares();
 
+
+    }
 }

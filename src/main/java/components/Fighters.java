@@ -1,5 +1,6 @@
 package components;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Fighters {
@@ -18,19 +19,7 @@ public class Fighters {
         this.lastName = lastName;
         this.nickname = nickname;
         this.weight = weight;
-        this.titles = null;
-    }
-
-    @Override
-    public String toString() {
-        return "Fighters{" +
-                "\nfighterId='" + fighterId + '\'' +
-                ",\n firstName='" + firstName + '\'' +
-                ",\n lastName='" + lastName + '\'' +
-                ",\n nickname='" + nickname + '\'' +
-                ",\n weight='" + weight + '\'' +
-                ",\n titles=" + titles +
-                "\n}";
+        this.titles = titles;
     }
 
     public String getFighterId() {
@@ -55,11 +44,33 @@ public class Fighters {
         this.titles = titles;
     }
 
-    public void palmares(){
-
+    public void Palmares(){
+        int win = 0;
+        int lose = 0;
+        int draw = 0;
     }
-/*
+
+    @Override
+    public String toString() {
+        return "Fighters{" +
+                "fighterId='" + fighterId + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", nickname='" + nickname + '\'' +
+                ", weight='" + weight + '\'' +
+                ", titles=" + titles +
+                '}';
+    }
+
     public static void main(String[] args) {
-        Fighters lavs = new Fighters(1, "ANDRIANTSOA", "Lavorary David", "62.5kg", "Lavs", null);
-    }*/
+        List<String> list1 = new ArrayList<>(5);
+        list1.add("test");
+        list1.add("test");
+        list1.add("test");
+        list1.add("test");
+        list1.add("test");
+        Fighters Dude1 = new Fighters("1", "JetThoo", "Holiday", "75.5kg", "Jetty", list1);
+
+        System.out.println(Dude1);
+    }
 }
