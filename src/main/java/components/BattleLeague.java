@@ -58,6 +58,12 @@ public class BattleLeague{
                 '}';
     }
 
+    public static void main(String[] args) {
+        List<String> fighters = new ArrayList<>(2);
+        fighters.add("Fighter1");
+        fighters.add("Fighter2");
 
-
+        BattleLeague match1 = new BattleLeague("UFC", fighters, new ArrayList<>());
+        System.out.println(match1);
+    }
 }
